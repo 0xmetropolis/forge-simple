@@ -12,7 +12,7 @@ contract CounterScript is Script {
         Counter counter = new Counter();
         counter.setNumber(42);
 
-        Counter counter_determinstic = new Counter{ salt: bytes32(uint256(1)) }();
+        Counter counter_determinstic = new Counter{ salt: bytes32(uint256(2)) }();
         counter_determinstic.setNumber(21);
         vm.stopBroadcast();
     }
